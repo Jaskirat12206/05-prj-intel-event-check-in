@@ -25,7 +25,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       135deg,
       rgba(0, 153, 219, 0.9) 0%,
       rgba(0, 104, 181, 0.9) 50%,
@@ -258,6 +259,12 @@ button .fas {
   color: #003c71;
 }
 
+.celebration-message {
+  background-color: #ecfdf3;
+  color: #166534;
+  font-weight: 600;
+}
+
 /* Counter */
 #attendeeCount {
   color: #0071c5;
@@ -348,6 +355,58 @@ select {
   color: #475569;
 }
 
+.team-count {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0071c5;
+}
+
+.attendee-list-section {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid #f1f5f9;
+}
+
+.attendee-list-section h3 {
+  color: #64748b;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.attendee-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.attendee-item {
+  background-color: #f8fafc;
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.attendee-name {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.attendee-team {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.empty-attendees {
+  color: #94a3b8;
+  text-align: center;
+  padding: 12px;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .hero {
@@ -380,5 +439,10 @@ select {
 
   .teams-grid {
     grid-template-columns: 1fr;
+  }
+
+  .attendee-item {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
